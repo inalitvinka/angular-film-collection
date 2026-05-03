@@ -2,6 +2,10 @@
   padding: 12px 60px;
   margin-bottom: 2.5rem;
   font-size: .95rem;
-  color: var(--color-accent);
+  color: inherit;
   background-color: var(--color-white);
+}
+
+.breadcrumbs a {
+  color: var(--color-accent);
 }
