@@ -1,0 +1,15 @@
+<nav class="container breadcrumbs">
+  @if (currentUrl === '/') {
+    <span>Home</span>
+  }
+
+  @if (currentUrl === '/about') {
+    <a routerLink="/">Home</a>
+    <span> > About</span>
+  }
+
+  @if (currentUrl.startsWith('/film/')) {
+    <a routerLink="/">Home</a>
+    <span> > {{ filmTitle }}</span>
+  }
+</nav>
