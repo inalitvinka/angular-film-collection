@@ -45,6 +45,9 @@
 @media (hover: hover) and (pointer: fine) {
   .film-card:hover {
     box-shadow: 0 12px 24px var(--color-black-40);
+  }
+  .film-button:hover,
+  .film-card:hover {
     cursor: pointer;
   }
 }
