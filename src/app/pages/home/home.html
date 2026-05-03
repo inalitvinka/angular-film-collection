@@ -1,0 +1,25 @@
+<div class="container catalog">
+  <h2 class="catalog-name">Film Catalog</h2>
+  <input
+    appAutofocus
+    type="text"
+    placeholder="Search by title"
+    [value]="filmService.search()"
+    (input)="filmService.search.set($any($event.target).value)"
+    class="catalog-input"
+  />
+
+  @if (filmService.filteredFilms().length === 0) {
+    <p>Nothing was found</p>
+  }
+
+  <ul class="catalog-cards">
+    @for (film of filmService.filteredFilms(); track film.id) {
+    <app-film-card
+      [film]="film"
+      (favoriteToggle)="filmService.toggleFavorite($event)"
+    />
+  }
+  </ul>
+
+</div>

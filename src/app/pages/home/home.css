@@ -1,0 +1,17 @@
+.catalog-name {
+  margin-bottom: 1.1rem;
+}
+
+.catalog-input {
+  margin-bottom: 2.5rem;
+  padding: .5rem .7rem;
+}
+
+.catalog-cards {
+  width: 100%;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
