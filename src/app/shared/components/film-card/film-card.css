@@ -1,0 +1,14 @@
+.film-img {
+  width: 17rem;
+}
+
+.film-card {
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.film-button {
+  padding: .4rem .3rem;
+}
