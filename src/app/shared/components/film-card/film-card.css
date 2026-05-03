@@ -11,4 +11,7 @@
 
 .film-button {
   padding: .4rem .3rem;
+  border: var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-white);
 }
