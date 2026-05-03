@@ -7,6 +7,7 @@ import {
 
 import { FilmService } from '../../core/services/film-service';
 import { DurationPipe } from '../../shared/pipes/duration-pipe';
+import { Film } from '../../core/models/film.model';
 
 @Component({
   selector: 'app-film-details',
@@ -20,9 +21,9 @@ export class FilmDetails implements OnInit {
   router = inject(Router);
   filmService = inject(FilmService);
 
-  filmId = Number(this.route.snapshot.paramMap.get('id'));
+  filmId = Number(this.route.snapshot.paramMap.get('id') ?? 0);
 
-  film = this.filmService.getFilmById(this.filmId);
+  film: Film | undefined;
 
   ngOnInit() {
     const film = this.filmService.getFilmById(this.filmId);
