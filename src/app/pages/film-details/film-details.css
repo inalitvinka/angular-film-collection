@@ -1,21 +1,51 @@
 .details {
   margin-bottom: 3rem;
   display: flex;
+  gap: 2rem;
+}
+
+.details-img {
+  width: 28rem;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+.details-content {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  gap: .7rem;
+  gap: .4rem;
 }
 
 .details-button {
   width: 10rem;
-  margin-bottom: 2rem;
   padding: .7rem;
   font-size: 1rem;
   text-align: start;
   border: none;
   background-color: inherit;
+  color: var(--color-accent);
+}
+
+.details-title {
+  font-size: 2rem;
+}
+
+.details-rating {
+  margin-bottom: 1rem;
+}
+
+.details-rating,
+.details-subtitle {
+  font-weight: 600;
 }
 
 .details-text {
-  max-width: 40rem;
+  max-width: 50rem;
   width: 100%;
+  padding-top: .7rem;
+  margin-top: .7rem;
+  border-top: solid 2px var(--color-gray);
+  line-height: 1.5;
 }

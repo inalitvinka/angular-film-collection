@@ -1,17 +1,50 @@
 .film-img {
-  width: 17rem;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px 6px 0 0;
 }
 
 .film-card {
-  width: 17rem;
+  width: 18rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: .5rem;
+  border-radius: 8px;
+  transition: transform .3s ease, box-shadow .3s ease, background .3s ease;
+}
+
+.film-content {
+  padding: .3rem .5rem .1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  flex: 1;
+}
+
+.film-title {
+  font-size: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .film-button {
-  padding: .4rem .3rem;
-  border: var(--color-accent);
+  width: 100%;
+  margin-top: auto;
+  padding:  .9rem .5rem;
+  border: none;
+  border-radius:  0  0 6px 6px;
   background-color: var(--color-accent);
   color: var(--color-white);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .film-card:hover {
+    box-shadow: 0 12px 24px var(--color-black-40);
+    cursor: pointer;
+  }
 }

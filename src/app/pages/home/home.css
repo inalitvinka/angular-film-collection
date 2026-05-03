@@ -3,8 +3,20 @@
 }
 
 .catalog-input {
+  max-width: 30rem;
+  width: 100%;
   margin-bottom: 2.5rem;
-  padding: .5rem .7rem;
+  padding: .7rem 1rem;
+  border-radius:  6px;
+  border: solid 1.5px var(--color-gray);
+  outline: none;
+  background-color: inherit;
+  transition: border-color .3s ease, box-shadow .3s ease, background .3s ease;
+}
+
+.catalog-input:focus {
+  background-color: var(--color-white);
+  border-color: var(--color-accent);
 }
 
 .catalog-cards {
@@ -13,5 +25,5 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 2rem;
 }
