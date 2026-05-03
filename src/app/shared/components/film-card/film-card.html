@@ -3,7 +3,6 @@
   <div class="film-content">
     <h3 class="film-title">{{ film().title }}</h3>
     <p>⭐ {{ film().rating }} • {{ film().year }} • {{ film().genre }}</p>
-    <!-- <p>⭐ {{ film().rating }} / 10</p> -->
   </div>
   <button (click)="onFavoriteClick($event)" class="film-button">
     {{ film().isFavorite ? 'Remove from favorites' : 'Add to favorites' }}
