@@ -1,4 +1,7 @@
 .breadcrumbs {
-  margin-bottom: 1.5rem;
+  padding: 12px 60px;
+  margin-bottom: 2.5rem;
+  font-size: .95rem;
   color: var(--color-accent);
+  background-color: var(--color-white);
 }

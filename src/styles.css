@@ -4,9 +4,9 @@
   --color-black: rgb(34 34 34);
   --color-black-40: rgb(34 34 34 / .4);
   --color-accent: rgb(48 119 212);
-  --color-white: rgb(247 247 247);
-  --color-gray-light: rgb(245 245 245);
+  --color-white: rgb(255 255 255);
   --color-gray: rgb(214 214 214);
+  --color-gray-light: rgb(247 247 247);
 }
 
 * {
