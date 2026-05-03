@@ -1,0 +1,14 @@
+@if (film) {
+  <div class="details">
+    <button routerLink="/" class="details-button">← Go back</button>
+    <img [src]="film.posterUrl" [alt]="film.title" class="film-img">
+
+    <h2>{{ film.title }}</h2>
+    <p>{{ film.year }}</p>
+    <p>{{ film.genre }}</p>
+    <p>{{ film.rating }}</p>
+    <p>{{ film.duration | duration }}</p>
+    <p class="details-text">{{ film.description }}</p>
+
+  </div>
+}
