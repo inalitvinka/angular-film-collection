@@ -5,7 +5,8 @@
     type="text"
     placeholder="Search by title"
     [value]="filmService.search()"
-    (input)="filmService.search.set($any($event.target).value)"
+    (input)="filmService.search.set(searchInput.value)"
+    #searchInput
     class="catalog-input"
   />
 
