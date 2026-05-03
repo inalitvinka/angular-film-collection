@@ -20,8 +20,8 @@ body {
   overflow-y: auto;
   height: 100%;
   font-family: Arial, sans-serif;
-  background-color: var(--color-gray-light);
   color: var(--color-black);
+  background-color: var(--color-gray-light);
 }
 
 body,
@@ -51,11 +51,6 @@ a {
 img {
   display: block;
   height: auto;
-  width: 20%;
-}
-
-button:hover {
-  cursor: pointer;
 }
 
 .container {
@@ -63,7 +58,8 @@ button:hover {
   overflow: hidden;
   min-width: var(--container-min-width);
   max-width: var(--container-max-width);
-  padding: 0 20px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin: 0 auto;
 }
 
