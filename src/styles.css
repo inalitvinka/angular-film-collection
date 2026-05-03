@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --container-max-width: 1440px;
+  --container-min-width: 380px;
+  --color-black: rgb(34, 34, 34);
+  --color-black-10: rgb(23 24 28 / 0.1);
+  --color-accent: rgb(48, 119, 212);
+  --color-white: rgb(247 247 247);
+  --color-gray-light: rgb(245 245 245);
+  --color-gray: rgb(214 214 214);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-y: auto;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-gray-light);
+  color: var(--color-black);
+}
+
+body,
+app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+ul,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 20%;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  min-width: var(--container-min-width);
+  max-width: var(--container-max-width);
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 1;
+}
