@@ -15,10 +15,6 @@
   background-color: inherit;
 }
 
-.details-button:hover {
-  cursor: pointer;
-}
-
 .details-text {
   max-width: 40rem;
   width: 100%;

@@ -10,3 +10,13 @@
   text-align: center;
   line-height: 1.5;
 }
+
+.back-button {
+  width: 10rem;
+  margin-bottom: 2rem;
+  padding: .7rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  background-color: inherit;
+}

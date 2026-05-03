@@ -54,6 +54,10 @@ img {
   width: 20%;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .container {
   position: relative;
   overflow: hidden;
