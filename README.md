@@ -11,5 +11,7 @@ Angular 20+ project for learning purposes
 - Film catalog with favorites
 
 ## Run project
-npm install
-npm start
+```
+  npm install
+  npm start
+```
