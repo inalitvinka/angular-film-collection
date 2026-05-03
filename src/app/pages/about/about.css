@@ -14,12 +14,21 @@
 }
 
 .back-button {
-  width: 10rem;
+  width: fit-content;
   margin-bottom: 2rem;
-  padding: .7rem;
+  padding: .5rem;
   font-size: 1rem;
   text-align: center;
-  border: none;
+  border-radius: 6px;
+  border: solid 1px transparent;
   color: var(--color-accent);
   background-color: inherit;
+  transition: border-color .3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .back-button:hover {
+    border-color: var(--color-accent);
+    cursor: pointer;
+  }
 }
