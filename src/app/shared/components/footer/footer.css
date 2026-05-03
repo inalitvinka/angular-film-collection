@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.footer-container {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  color: inherit;
+  font-weight: bold;
+}
